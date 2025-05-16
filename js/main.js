@@ -20,7 +20,7 @@ function removerEspacos(string) {
   return string.replaceAll(/\s+/g, '')
 }
 
-const regexConteudo = /^[A-Za-zÀ-ÿ\s]{10,}$/
+const regexConteudo = /^[A-Za-zÀ-ÿ\d\s!?\.:,;"']{10,}$/
 
 function validarConteudo(conteudo) {
   return regexConteudo.test(conteudo)
@@ -56,27 +56,30 @@ async function manipularSubmissaoFormulario(event) {
   const autoriaSemEspaços = removerEspacos(autoria)
 
   if (!validarConteudo(conteudoSemEspaços)) {
-    if(conteudoSemEspaços == "") {
-      alert("Não é possível enviar um pensamento vazio, é necessário escrever algo.")
+    if (conteudo === "") {
+      alert("Não é possível enviar um pensamento vazio.")
+    } else if (conteudo.replace(/\s/g, "").length < 10) {
+      alert(
+        "O pensamento deve ter pelo menos 10 caracteres (descontando os espaços)."
+      )
     } else {
-      alert("Somente é permitida a inclusão pensamentos com no mínimo 10 caracteres.")
-    } 
+      alert("O pensamento só pode conter letras, espaços e os símbolos a seguir: '!', ',', ';', ':', '.' e '?'")
+    }
     return
   }
 
   if (!validarAutoria(autoriaSemEspaços)) {
-    if (conteudoSemEspaços == "") {
-      alert("É necessário citar algum autor.")
+    if (autoria === "") {
+      alert("Por favor, informe o nome do autor.")
     } else {
-      alert(
-        "Somente é permitida a inclusão de letras, com, no mínimo 10, caracteres. Não é permitido a inserção de espaços ou caracteres especiais."
-      )
+      alert("O nome do autor deve conter pelo menos 3 letras, no máximo 15, e não pode conter símbolos, números ou pontuações.")
     }
     return
   }
 
   if(!validarData(data)) {
     alert("Não é permitido o cadastro de datas futuras. Selecione outra data.")
+    return
   }
 
   const chaveNovoPensamento = 
