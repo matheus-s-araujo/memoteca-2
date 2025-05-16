@@ -1,0 +1,87 @@
+{
+  "pensamentos": [
+    {
+      "id": "2a56",
+      "conteudo": "Você faz TI? Conserta meu celular!",
+      "autoria": "Grupo da família",
+      "data": "2025-05-02",
+      "favorito": false
+    },
+    {
+      "id": "4c7d",
+      "conteudo": "Da vida reclama, mas sem ela não vive!",
+      "autoria": "Mestre Yoda",
+      "data": "2025-05-02T09:15:30.123Z",
+      "favorito": false
+    },
+    {
+      "id": "5b8a",
+      "conteudo": "Na minha máquina funciona",
+      "autoria": "Dev",
+      "data": "2025-05-03",
+      "favorito": false
+    },
+    {
+      "id": "68uy",
+      "conteudo": "Esse é de laranja que parece de limão, mas tem gosto de tamarindo!",
+      "autoria": "Chaves",
+      "data": "2025-05-04T11:30:45.789Z",
+      "favorito": false
+    },
+    {
+      "id": "b807",
+      "conteudo": "Melhor professor, o fracasso é!",
+      "autoria": "Mestre Yoda",
+      "data": "2025-05-05T12:00:00.000Z",
+      "favorito": false
+    },
+    {
+      "id": "9f3c",
+      "conteudo": "Você não é todo mundo!",
+      "autoria": "Mãe",
+      "data": "2025-05-06T13:25:10.987Z",
+      "favorito": false
+    },
+    {
+      "id": "6a2b",
+      "conteudo": "Foi sem querer querendo!",
+      "autoria": "Chaves",
+      "data": "2025-05-07T14:40:55.654Z",
+      "favorito": false
+    },
+    {
+      "id": "7e2a",
+      "conteudo": "Que a força esteja com você!",
+      "autoria": "Mestre Yoda",
+      "data": "2025-05-08T15:10:20.321Z",
+      "favorito": false
+    },
+    {
+      "id": "5c8f",
+      "conteudo": "Resolver o bug não consegue? Esfriar a cabeça vc deve.",
+      "autoria": "Mestre Yoda",
+      "data": "2025-05-09T16:55:05.432Z",
+      "favorito": false
+    },
+    {
+      "id": "2d6e",
+      "conteudo": "Não faça drama, faça café! :)",
+      "autoria": "Dev",
+      "data": "2025-05-10T17:30:45.876Z",
+      "favorito": false
+    },
+    {
+      "id": "3f1a",
+      "conteudo": "Conserta minha impressora?",
+      "autoria": "Grupo da família",
+      "data": "2025-05-11T18:20:35.789Z",
+      "favorito": false
+    },
+    {
+      "id": "f808",
+      "conteudo": "Meu código está funcionando perfeitamente\n",
+      "autoria": "Matheus",
+      "data": "2025-05-16T00:00:00.000Z"
+    }
+  ]
+}
